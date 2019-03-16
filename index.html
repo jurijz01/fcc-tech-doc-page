@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Technical Documentation Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header><span><i class="fa fa-html5"></i>HTML</span></header>
+        <ul>
+          <li><a class="nav-link" href="#The_HTML_<head>_Element">The HTML &lt;head&gt; Element</a></li>
+          <li><a class="nav-link" href="#The_HTML_<title>_Element">The HTML &lt;title&gt; Element</a></li>
+          <li><a class="nav-link" href="#The_HTML_<style>_Element">The HTML &lt;style&gt; Element</a></li>
+          <li><a class="nav-link" href="#The_HTML_<link>_Element">The HTML &lt;link&gt; Element</a></li>
+          <li><a class="nav-link" href="#The_HTML_<meta>_Element">The HTML &lt;meta&gt; Element</a></li>
+          <li><a class="nav-link" href="#The_HTML_<script>_Element">The HTML &lt;script&gt; Element</a></li>
+          <li><a class="nav-link" href="#The_HTML_<base>_Element">The HTML &lt;base&gt; Element</a></li>
+        </ul>
+    </nav>
+      
+    <div class="topnav">
+      <a href="#main-doc" class="active"><i class="icon-mobile fa fa-html5"></i></a>
+      <div id="myLinks">
+        <a href="#The_HTML_<head>_Element">The HTML &lt;head&gt; Element</a>
+        <a href="#The_HTML_<title>_Element">The HTML &lt;title&gt; Element</a>
+        <a href="#The_HTML_<style>_Element">The HTML &lt;style&gt; Element</a>
+        <a href="#The_HTML_<link>_Element">The HTML &lt;link&gt; Element</a>
+        <a href="#The_HTML_<meta>_Element">The HTML &lt;meta&gt; Element</a>
+        <a href="#The_HTML_<script>_Element">The HTML &lt;script&gt; Element</a>
+        <a href="#The_HTML_<base>_Element">The HTML &lt;base&gt; Element</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <main id="main-doc">
+      
+      <section class="main-section" id="The_HTML_<head>_Element">
+        <header>The HTML &lt;head&gt; Element</header>
+        <article>
+          <p>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. HTML metadata is data about the HTML document. Metadata is not displayed. Metadata typically define the document title, character set, styles, links, scripts, and other meta information.</p>
+          <p>The following tags describe metadata: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, and &lt;base&gt;.</p>
+        </article>
+      </section >
+
+      <section class="main-section" id="The_HTML_<title>_Element">
+        <header>The HTML &lt;title&gt; Element</header>
+        <article>
+          <p>The &lt;title&gt; element defines the title of the document, and is required in all HTML/XHTML documents.<br>
+             The &lt;title&gt; element:
+          </p>
+            <li>defines a title in the browser tab</li>
+            <li>provides a title for the page when it is added to favorites</li>
+        </article>
+      </section>
+
+      <section class="main-section" id="The_HTML_<style>_Element">
+        <header>The HTML &lt;style&gt; Element</header>
+        <article>
+          <p>
+          The &lt;style&gt; element is used to define style information for a single HTML page:
+          </p>
+          <pre>
+          <code>
+    &lt;style&gt;
+    body {background-color: powderblue;}
+    h1 {color: red;}
+    p {color: blue;}
+    &lt;/style&gt;
+          </code>
+          </pre>
+        </article>
+      </section>
+        
+      <section class="main-section" id="The_HTML_<link>_Element">
+        <header>The HTML &lt;link&gt; Element</header>
+        <article>
+          <p>
+          The &lt;link&gt; element is used to link to external style sheets:
+          </p>
+          <pre>
+          <code>
+    &lt;link rel="stylesheet" href="mystyle.css"&gt;
+          </code>
+          </pre>
+        </article>
+      </section>
+
+      <section class="main-section" id="The_HTML_<meta>_Element">
+        <header>The HTML &lt;meta&gt; Element</header>
+        <article>
+          <p>
+          The &lt;meta&gt; element is used to specify which character set is used, page description, keywords, author, and other  metadata. Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.<br><br>Example :
+          </p>
+          <pre>
+          <code>
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="description" content="Free Web tutorials"&gt;
+    &lt;meta name="keywords" content="HTML,CSS,XML,JavaScript"&gt;
+    &lt;meta name="author" content="John Doe"&gt;
+          </code>
+          </pre>
+          <p>HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta&gt; tag.</p>
+          <p>The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.</p>
+          <p>You should include the following &lt;meta&gt; viewport element in all your web pages:</p>
+          <pre>
+          <code>
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+          </code>
+          </pre>          
+        </article>
+      </section>
+        
+      <section class="main-section" id="The_HTML_<script>_Element">
+        <header>The HTML &lt;script&gt; Element</header>
+        <article>
+          <p>The &lt;script&gt; element is used to define client-side JavaScripts.</p>
+          <p>This JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+          <pre>
+          <code>
+    &lt;script&gt;
+    function myFunction {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    }
+    &lt;/script&gt;
+          </code>
+          </pre>
+        </article>
+      </section>
+        
+      <section class="main-section" id="The_HTML_<base>_Element">
+        <header>The HTML &lt;base&gt; Element</header>
+        <article>
+          <p>The &lt;base&gt; element specifies the base URL and base target for all relative URLs in a page:</p>
+          <pre>
+          <code>
+    &lt;base href="https://www.test.com/images/" target="_blank"&gt;
+          </code>
+          </pre>
+          <p>HTML head Elements:</p>
+            <li>&lt;head&gt; Defines information about the document</li>
+            <li>&lt;title&gt; Defines the title of a document</li>
+            <li>&lt;base&gt; Defines a default address or a default target for all links on a page</li>
+            <li>&lt;link&gt; Defines the relationship between a document and an external resource</li>
+            <li>&lt;meta&gt; Defines metadata about an HTML document</li>
+            <li>&lt;script&gt; Defines a client-side script</li>
+            <li>&lt;style&gt; Defines style information for a document</li>
+        </article>
+      </section>
+      
+      <div class="scroll-nav">
+        <a href="#main-doc" title="To Top">
+          <i class="fa fa-angle-double-up"></i>
+          <h4 class="footer-icon">To top</h4>
+        </a>
+      </div>
+
+    </main>
+
+    <script type="text/javascript" src="resources/js/responsive-nav.js"></script>
+
+  </body>
+</html>
